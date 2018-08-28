@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "list": "../../components/contant/contant",
+    "another":"../../components/wrap/wrap",
+    " imgUrls":"../../components/swiper/swiper",
+    "pull":"../../components/pull/pull"
+    }
+  }

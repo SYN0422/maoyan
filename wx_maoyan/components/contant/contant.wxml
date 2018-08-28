@@ -1,0 +1,49 @@
+<!--components/contant/contant.wxml-->
+<view class="page">
+    <view class="nav">
+        <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+            <view class="content">全城</view>
+            <view class="icon"></view>
+        </view>
+        <view class="nav-son borders {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+            <view class="content">品牌</view>
+            <view class="icon"></view>
+        </view>
+        <view class="nav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+            <view class="content">特色</view>
+            <view class="icon"></view>
+        </view>
+    </view>
+  <!-- <view class='city {{cityopen}}'></view> -->
+    <!-- <view style='display:none;' class="quyu {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+        <view class="qy quyu-left">
+            <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" bindtap="selectleft">
+                {{city_data.district.name}}
+            </view>
+        </view>
+        <view class="qy quyu-center">
+            <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" bindtap="selectcenter" data-city='{{index}}'>
+                {{index}}
+            </view>
+        </view>
+        <view class="qy quyu-right">
+            <view wx:for="{{cityright}}">
+                {{item}}
+            </view>
+        </view>
+    </view>
+    <view style='display:none;'  class="temp temp1 {{nzopen ? 'slidown' : 'slidup'}} {{nzshow ? 'disappear':''}}">
+        <view class='list' wx:for="{{nv.subItems}}">
+           {{item.name}}
+          <text class='type_right'>{{item.count}}</text>   
+        </view>
+    </view>
+    <view style='display:none;'  class="style  {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+    特效厅
+        <view wx:for="{{px.hallType.subItems}}">
+            <text  class='style_list'>{{item.name}}</text> 
+        </view>
+        </view> -->
+    <!-- <view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view> -->
+</view>
+<slot></slot>

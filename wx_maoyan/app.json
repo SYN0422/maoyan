@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/cinema/cinema",
+    "pages/swiper/swiper",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/pull/pull",
+    "pages/city/city"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "red",
+    "backgroundColor": "white",
+    "borderStyle": "white",
+    "position": "buttom",
+    "list": [
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "电影",
+        "iconPath": "image/cinema.png",
+        "selectedIconPath": "image/selectcinema.png"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "影院",
+        "iconPath": "image/film.png",
+        "selectedIconPath": "image/selectfilm.png"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "演出",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/selectmy.png"
+      }
+    ]
+  }
+
+}

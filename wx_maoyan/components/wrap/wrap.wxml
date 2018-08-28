@@ -1,0 +1,22 @@
+<!--components/wrap/wrap.wxml-->
+<slot></slot>
+<view class='wrap' wx:for="{{dalian.cinemas}}" wx:key="{{key}}">
+  <view class='left'>
+      <view class='top'>
+          <text>{{item.nm}}</text>
+          <text>{{item.sellPrice}}元起</text>
+      </view>
+      <view class='center'>{{item.addr}}</view>
+      <view class='end'>
+      <text> {{item.tag.hallType}}</text>
+       
+      </view>
+      <view class='buttom'>
+          <text>{{item.promotion.cardPromotionTag}}</text>
+      </view>
+  </view>
+  <view class='right'>
+
+ {{item.distance}}
+  </view>
+</view>

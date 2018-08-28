@@ -1,0 +1,78 @@
+<!--Com/xialakuang/xialakuang.wxml-->
+<scroll-view  scroll-y="true">
+<view class='wrap'>
+  <view wx:for="{{arr}}" wx:key="{{index}}" class='xiala' data-index="{{index}}" catchtap='click'>{{item}} 
+  <image src='../../image/pull.png'></image>
+  </view>
+</view>
+<view class='eac' wx:if="{{haha}}">
+  <view class='e2'>
+    <view wx:for="{{Json.brand.subItems}}" class='a2'   >
+    <view class='a2_bac' catch:touchend='a2_click' data-index="{{index}}"></view>
+      <text class='a2_left'>{{item.name}}</text>
+      <text class='a2_right'>{{item.count}}</text>
+  </view>
+  </view>
+</view>
+
+<view class='left_eac' wx:if="{{haha1}}">
+<view>
+<view class='e1_top'><text catchtap='sq'>商圈</text><text catchtap='dt'>地铁</text></view>
+
+<view class='eac_wrap' wx:if="{{ok}}">
+<view class='left_ove'>
+<view wx:for="{{Json.district.subItems}}" wx:key="{{index}}" class='e1_left'>
+  <view class='a1_text'>
+   {{item.name}}({{item.count}})
+  </view>
+  </view>
+</view>
+<view class='right_ove'>
+<view wx:for="{{Json.district.subItems}}" wx:key="{{index}}">
+ <view wx:if="{{item.subItems.name == filterName}}">
+ 11111
+</view>
+</view>
+</view>
+</view>
+<view class='eac_wrap' wx:if="{{on}}">
+<view class='left_ove'>
+<view wx:for="{{Json.subway.subItems}}" wx:key="{{index}}" class='e1_left'>
+  <view class='a1_text'>
+   {{item.name}}({{item.count}})
+  </view>
+  </view>
+</view>
+<view class='right_ove'>
+<view wx:for="{{Json.subway.subItems}}" wx:key="{{index}}">
+ <view wx:if="{{item.subItems.name == filterName}}">
+ 11111
+</view>
+</view>
+</view>
+</view>
+</view>
+</view>
+
+<view class='right_eac' wx:if="{{haha2}}">
+<view>
+<view class='title_1'>
+特色功能
+</view>
+<view wx:for="{{Json.service.subItems}}" class='wrap_1'>
+{{item.name}}
+</view>
+</view>
+
+<view>
+<view class='title_2'>
+特效厅
+</view>
+<view wx:for="{{Json.hallType.subItems}}" class='wrap_2'>
+{{item.name}}
+</view>
+</view>
+
+</view>
+<view class='c2' style="height:{{height+'px'}}" wx:if="{{aha}}"></view>
+</scroll-view>

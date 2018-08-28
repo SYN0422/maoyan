@@ -1,0 +1,53 @@
+/* components/wrap/wrap.wxss */
+.wrap{
+  width: 100%;
+  /* height: 240rpx; */
+  border: 1px solid #efefef;
+  overflow: hidden;
+  
+}
+.wrap .left{
+  margin: 30rpx;
+  float: left;
+  vertical-align: middle;
+  width: 70%;
+}
+.wrap .left .top{
+  margin-bottom:  15rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+}
+
+.wrap .left .top text:nth-of-type(2){
+  color: red;
+}
+.wrap .left .center{
+  font-size: 32rpx;
+  margin-bottom:  16rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+}
+.wrap .left .end{
+font-size: 33rpx;
+}
+.wrap .left .end text{
+ font-size: 32rpx;
+ color: #18e0e0;
+ margin-right:10rpx;
+ border: 1px solid #c5edfd;
+}
+.wrap .buttom text{
+  font-size: 28rpx;
+}
+.wrap .right{
+  width: 20%;
+  float: right;
+  margin-top:88rpx; 
+  color: #b3a8a8;
+}

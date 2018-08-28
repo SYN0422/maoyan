@@ -1,0 +1,140 @@
+/* pages/cinema/cinema.wxss */
+.header{
+  width: 100%;
+  background: #efefef;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.where{
+  margin-left:20rpx; 
+  vertical-align: middle;
+  color: rgb(170, 162, 162);
+}
+.where image{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.header .search{
+  margin-left: 175rpx;
+  margin-top: -85rpx;
+  background-color: rgb(253, 252, 252);
+  width: 75%;
+  height: 70rpx;
+  border-radius:25rpx; 
+  line-height: 70rpx;
+}
+.header .search image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.header .search input{
+  margin-left: 80rpx;
+  margin-top: -92rpx;
+  vertical-align: middle;
+}
+.wrap{
+  width: 100%;
+  /* height: 240rpx; */
+  border: 1px solid #efefef;
+  overflow: hidden;
+  
+}
+.wrap .left{
+  margin: 30rpx;
+  float: left;
+  vertical-align: middle;
+  width: 70%;
+}
+.wrap .left .top{
+  margin-bottom:  15rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+}
+
+.wrap .left .top text:nth-of-type(2){
+  color: red;
+}
+.wrap .left .center{
+  font-size: 32rpx;
+  margin-bottom:  16rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+}
+.wrap .left .end{
+font-size: 33rpx;
+}
+.wrap .left .end text{
+ font-size: 32rpx;
+ color: #18e0e0;
+ margin-right:10rpx;
+ border: 1px solid #c5edfd;
+}
+.wrap .buttom text{
+  font-size: 28rpx;
+}
+.wrap .right{
+  width: 20%;
+  float: right;
+  margin-top:88rpx; 
+  color: #b3a8a8;
+}
+
+  .phone_one{
+    height: 80rpx;
+    width: 100%;
+    line-height: 80rpx;
+    margin: 0 auto;
+    border-bottom: 1rpx solid rgb(235, 235, 235);
+    display: flex; 
+    position: relative;
+    /* justify-content: space-between; */
+ }
+.phone_one .phone_personal{
+    text-align: center;
+    display: inline;
+    margin: 0 auto;
+    margin-left: 32rpx;
+    font-size: 30rpx;
+    color: #b5c1d1;
+}
+.phone_one image{
+  margin:16rpx 5rpx 0 0;
+  width: 50rpx;
+  height: 50rpx;
+  transition: All 0.4s ease;  
+  -webkit-transition: All 0.4s ease;
+}
+.person_box{
+  position: relative;
+}
+.phone_select{
+    margin-top:0;
+    z-index: 100;
+    position: absolute;
+    background-color: rgba(121, 121, 121, 0.4);
+    width: 100%;
+    height: 900rpx;
+}
+.select_one{  
+    text-align: center;
+    background-color:white;
+    width:100%;  
+    height:100rpx;
+    line-height:100rpx;
+    margin:0 auto;
+    border-bottom:2rpx solid #f4f7f9;
+}
+.select_one:hover{
+  color: green;
+  background-color: #e8e8e8;
+}
+.rotateRight{
+    transform: rotate(180deg); 
+}
